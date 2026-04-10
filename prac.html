@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="countDisplay">0</div>
+<button id="addBtn">+</button>
+<button id="subBtn">-</button>
+
+    <script>
+    let count = 0;
+
+function updateDisplay() {
+  document.getElementById('countDisplay').textContent = count;
+}
+
+document.getElementById('addBtn').addEventListener('click', function () {
+  count++;
+  updateDisplay();
+});
+
+document.getElementById('subBtn').addEventListener('click', function () {
+  count--;
+  updateDisplay();
+});
+</script>
+
+</body>
+</html>

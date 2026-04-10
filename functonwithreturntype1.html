@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        var msg = () => {
+            return "hello";
+            
+        };
+        document.write(msg()+ "<br>");
+
+
+        var add = (num,num1)=>{
+            return num + num1;
+        }
+        document.write(add(10,20)+ "<br>");
+
+        var multiply = (l,b)=>{
+            return l*b;
+        }
+        document.write(multiply(10,20)+ "<br>");
+
+
+        function mydisplayer(){
+            document.write("Display");
+        }
+
+        function firstFunction(){
+            document.write("firstFunction");
+            mydisplayer();
+        }
+        firstFunction();
+
+
+        function mydisplayer(sum){
+            document.write("Display"+ sum);
+        }
+
+        function firstFunction(num,num1,mydisplayer){
+            document.write("firstFunction");
+            sum = num + num1;
+            mydisplayer(sum);
+        }
+        firstFunction(10,20,mydisplayer);
+
+
+
+        function mydisplay(mul){
+            document.write("Display"+ mul);
+        }
+
+        function firstFunction1(l,b,mydisplay){
+            document.write("firstFunction1");
+            mul = l * b;
+            mydisplay(mul);
+        }
+        firstFunction1(10,20,mydisplay);*/
+
+
+        function mydisplayer(sum){
+            document.write("Display"+ sum);
+        }
+
+        function firstFunction(num,num1,callback){
+            document.write("firstFunction");
+            sum = num + num1;
+            callback(sum);
+        }
+        firstFunction(10,20,mydisplayer);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

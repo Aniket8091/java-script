@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <h1 id="over">This is header_1</h1>
+
+    <script>
+
+      var over =  document.getElementById("over");
+
+      over.addEventListener("mouseover", function() {
+
+        over.style.color = "red"
+
+        over.style.fontSize = "3cm"
+
+        over.style.backgroundColor = " yellow"
+
+        over.addEventListener("mouseleave", function() {
+
+        over.style.color = "green"
+
+        over.style.fontSize = "1cm"
+
+      })
+
+
+
+      })
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

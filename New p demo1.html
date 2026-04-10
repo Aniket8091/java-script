@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <script>
+
+        //promise
+        /*let prom = new Promise((resolve, reject) => {
+            let task = true;
+
+            if (task) {
+                resolve("task completed")
+            } else {
+                reject("task fail")
+            }
+        });
+
+        prom
+            .then((data) => {
+                console.log(data);
+            })
+            .catch((error) => {
+                console.log(error);
+
+            })*/
+
+            async function asynDemo(){
+
+            let prom = new Promise((resolve, reject) => {
+                let task = true;
+    
+                if (task) {
+                    resolve("task get completed")
+                } else {
+                    reject("task get Rejected")
+                }
+            });
+    
+            return prom;
+        }
+        asynDemo()
+                .then((data) => {
+                    console.log(data);
+                })
+                .catch((error) => {
+                    console.log(error);
+                })
+
+                
+       
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

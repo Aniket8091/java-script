@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        async  function asynDemo(){
+             let prom = new Promise((resolve, reject) => {
+            setTimeout(()=>{
+
+            let success = true
+            if (success) {
+                resolve("success")
+            } else {
+                reject("Rejected")
+            }
+        },3000)
+        })
+        prom
+        .then((data)=>{
+            console.log(data);
+        })
+        .catch((error)=>{
+            console.log(error);
+        })
+        
+        let promawait = await prom
+        console.log(promawait)
+        console.log("Hi this is console")
+    }
+    asynDemo()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

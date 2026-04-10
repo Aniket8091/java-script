@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var amount =prompt("Enter amount to withdraw:");
+        if(amount % 100 == 0){
+            if(amount>=2000)
+            {
+                var noofnote=parseInt(amount/2000)
+                amount=amount%2000
+                document.write("2000 no of note:"+noofnote+"<br>")
+            }
+            if(amount>=500)
+            {
+                var noofnote=parseInt(amount/500)
+                amount=amount%500
+                document.write("500 no of note:"+noofnote+"<br>")
+            }
+            if(amount>=200)
+            {
+                var noofnote=parseInt(amount/200)
+                amount=amount%200
+                document.write("200 no of note:"+noofnote+"<br>")
+            }
+            if(amount>=100)
+            {
+                var noofnote=parseInt(amount/100)
+                amount=amount%100
+                document.write("100 no of note:"+noofnote+"<br>")
+            }
+
+        }
+        else{
+            alert("Invalid amount!");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

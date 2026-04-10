@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Instituite{
+
+            constructor(instid, instname, instaddress, instcontact){
+                this.id = instid;
+                this.name = instname;
+                this.address = instaddress;
+                this.contact = instcontact;
+
+            }
+            instdetails(){
+                document.write("Id:" + this.id + "<br>");
+                document.write("Name:" + this.name + "<br>");
+                document.write("Address:" + this.address + "<br>");
+                document.write("Contact:" + this.contact + "<br>");
+            }
+        }
+        obj = new Instituite(101, "Aniket", "Ghansoli", 8767042498)
+        obj.instdetails();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

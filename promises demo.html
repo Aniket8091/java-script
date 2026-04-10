@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- very Important -->
+
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var prom=new Promise((resolve,reject)=>{
+            let isCopy=true
+            if(isCopy){
+                reject("Examget Rejected")
+            }
+            else{
+                resolve("Exam Successfully Done")
+            }
+        })
+        prom.then((msg)=>{console.log(msg)})
+        .catch((error)=>{console.log(error)})
+
+
+    </script>
+    
+</html>

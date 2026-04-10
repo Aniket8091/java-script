@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Employee{
+
+            constructor(empId,empname){
+                this.id=empId;
+                this.name=empname;
+            }
+
+            empdetails(){
+                document.write("Id :"+this.id+"<br>")
+                document.write("Name :"+this.name+"<br>")
+            }
+        }
+        obj=new Employee(101,"Aniket")
+        /*document.write(obj.id+"<br>");
+        document.write(obj.name+"<br>");*/
+
+        obj.empdetails()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

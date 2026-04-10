@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script>
+
+        let marks =0
+
+        async function findWeather(){
+
+            var totalmarks=new Promise((resolve,rejected)=>{
+
+                setTimeout(()=>{
+
+                    marks=marks+20+90+40
+
+                    resolve("mark :"+marks)
+
+                },5000)
+
+            })
+
+
+
+            console.log("finding marks....")
+
+            marksawait=await totalmarks
+
+            console.log("Mumbai weather is "+marksawait)
+
+
+
+
+
+            var percentage=new Promise((resolve,rejected)=>{
+
+                setTimeout(()=>{
+
+                    per=parseFloat((marks/360)*100)
+
+                    resolve("percentage :"+per)
+
+                },3000);
+
+            })
+
+
+
+            console.log("finding percentage w.....")
+
+
+
+            persentageawait=await percentage
+
+            console.log("percentage is :"+persentageawait)
+
+        }
+
+
+
+        findWeather()
+
+    </script>
+
+    
+
+</body>
+
+</html>

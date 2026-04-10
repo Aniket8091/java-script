@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        async function findWeather() {
+            const mumbaiWeather = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("mumbai 27dgcl  ");
+                }, 5000);
+            });
+
+            const delhiWeather = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("delhi 24dgcl");
+                }, 3000);
+            });
+
+            console.log("Finding Mumbai weather...");
+            const mumbaiawait = await mumbaiWeather;
+            console.log("Mumbai weather is " + mumbaiawait);
+
+            console.log("Finding Delhi weather...");
+            const delhiawait = await delhiWeather;
+            console.log("Delhi weather is " + delhiawait);
+        }
+
+        findWeather();
+    </script>
+</body>
+</html>

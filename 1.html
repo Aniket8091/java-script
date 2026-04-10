@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+</head>
+<body>
+     Enter value <input type="text" id="msg"/>
+    <p id="demo"></p>
+
+    <script>
+        var msg = document.getElementById("msg");
+        msg.addEventListener("keyup", function() {
+            document.getElementById("demo").innerHTML = msg.value;
+        });
+    </script>
+</body>
+</html>
